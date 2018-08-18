@@ -5,9 +5,11 @@
 }
 
 body{
-	height: 100vh;
+	height: 90vh;
 	display: flex;
-	background-color: #1e90ff;
+	background-image: url('img/back/background5.jpg');
+	background-repeat: no-repeat;
+  	background-size: cover;
 }
 
 .memory-game{
@@ -29,6 +31,11 @@ body{
 	transition: transform 0.5s;
 }
 
+.memory-card:hover{
+	transform: scale(1.05);
+	transition: transform 0.2s;
+}
+
 .memory-card:active{
 	transform: scale(.95);
 	transition: transform .3s;
@@ -45,10 +52,25 @@ body{
 	padding: 20px;
 	position: absolute;
 	border-radius: 5px;
-	background-color: tomato;
+	background-color: #28784D;
 	backface-visibility: hidden;
 }
 
 .front-face{
 	transform: rotateY(180deg);
+	background-color: #FFE3DB;
+}
+
+h3{
+	text-align: center;
+	color: brown;
+	font-family: 'Merienda', cursive;
+	font-weight: 1500;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
